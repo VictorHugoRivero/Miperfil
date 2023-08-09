@@ -1,3 +1,14 @@
+/* Resto de tus estilos... */
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Resto de tus estilos... */
+
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
