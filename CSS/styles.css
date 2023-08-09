@@ -9,6 +9,37 @@ body.dark-mode {
 /* Resto de tus estilos... */
 
 
+/* Resto de tus estilos... */
+
+/* Estilos para el botón de alternancia de modo oscuro */
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.slider {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-right: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-mode .slider {
+    transform: translateX(100%);
+    background-color: #ffffff;
+}
+
+/* Resto de tus estilos... */
+
+
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
