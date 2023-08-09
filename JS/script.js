@@ -1,2 +1,6 @@
-// Tu código JavaScript personalizado
-// Por ejemplo, podrías agregar interacciones o animaciones aquí.
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
