@@ -1,102 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/styles.css">
-    <title> CV de Victor Hugo Rivero</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Interactivo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Resto de tu código HTML... -->
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/Hugo.png" alt="Foto de perfil de Víctor Hugo Rivero" class="rounded-circle" height="150">
+       
+        <!-- Comentario: El atributo `alt` proporciona un texto alternativo para la imagen, que se muestra cuando la imagen no se puede cargar. -->
+        <span class="text-white">Víctor Hugo Rivero</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#datos-personales">Datos personales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia-laboral">Experiencia laboral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#educacion">Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificaciones">Certificaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
- <!--            <button id="dark-mode-toggle" class="button">Modo Oscuroo</button>
+  <!-- Contenido del CV -->
+  <div class="container">
 
-    <div class="dark-mode-toggle">
-    <div class="slider"></div>
-</div>
-<!-- Resto de tu código HTML... -->
+    <!-- Datos personales -->
+    <section id="datos-personales">
+      <h1 class="text-center mb-3">Datos personales</h1>
+      <ul class="list-unstyled">
+        <li>
+          <strong>Nombre:</strong> Víctor Hugo Rivero
+         
+          <!-- Comentario: El atributo `id` proporciona un identificador único para el elemento, que se puede utilizar para referenciarlo más adelante. -->
+          <input type="hidden" id="nombre" value="Víctor Hugo Rivero">
+        </li>
+        <li>
+          <strong>Edad:</strong> 38 años
+          <input type="hidden" id="edad" value="38">
+        </li>
+        <li>
+          <strong>Dirección:</strong> B° El Huaico Mza.471D C15
+          <input type="hidden" id="direccion" value="B° El Huaico Mza.471D C15">
+        </li>
+        <li>
+          <strong>Teléfono:</strong> 3875845584
+          <input type="hidden" id="telefono" value="3875845584">
+        </li>
+        <li>
+          <strong>Correo electrónico:</strong> bettermans@gmail.com
+          <input type="hidden" id="correo" value="bettermans@gmail.com">
+        </li>
+      </ul>
+    </section>
 
 
-<!-- Resto de tu código HTML... -->
+<!-- Experiencia laboral -->
+<section id="experiencia-laboral">
+  <h1 class="text-center mb-3">Experiencia laboral</h1>
+  <ul class="list-unstyled">
+    <li>
+      <strong>Empresa:</strong> Google
+      <strong>Puesto:</strong> Ingeniero de software
+      <strong>Fecha de inicio:</strong> 2020
+      <strong>Fecha de finalización:</strong> Actualidad
+      <p>
+        Desarrollo de software para la búsqueda de Google.
+      </p>
+    </li>
+    <li>
+      <strong>Empresa:</strong> Facebook
+      <strong>Puesto:</strong> Desarrollador de aplicaciones móviles
+      <strong>Fecha de inicio:</strong> 2018
+      <strong>Fecha de finalización:</strong> 2020
+      <p>
+        Desarrollo de aplicaciones móviles para Facebook.
+      </p>
+    </li>
+  </ul>
+</section>
 
-<div class="dark-mode-toggle">
-    <div class="slider"></div>
-</div>
+<!-- Educación -->
+<section id="educacion">
+  <h1 class="text-center mb-3">Educación</h1>
+  <ul class="list-unstyled">
+    <li>
+      <strong>Título:</strong> Ingeniero en Sistemas Computacionales
+      <strong>Institución:</strong> Universidad Nacional Autónoma de México
+      <strong>Fecha de graduación:</strong> 2023
+    </li>
+    <li>
+      <strong>Título:</strong> Técnico en Informática
+      <strong>Institución:</strong> Centro de Estudios Tecnológicos, Industrial y de Servicios No. 154
+      <strong>Fecha de graduación:</strong> 2019
+    </li>
+  </ul>
+</section>
 
-<!-- Resto de tu código HTML... -->
-
-
-
-
-
-
+<!-- Certificaciones -->
+<section id="certificaciones">
+  <h1 class="text-center mb-3">Certificaciones</h1>
+  <div class="certificates">
     
-
-    <header>
-        <h1>Victor Hugo Rivero</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-
-
-                <section id="contact">
-    <h2>Contacto</h2>
-    <p>Puedes contactarme en: bettermans@gmail.com</p>
-    <button class="button">¡Contáctame!</button>
+    <div class="certificate-card">
+      <img src="CV/path/to/certificates/cert1.jpg" alt="Certificado de AWS Certified Solutions Architect - Associate">
+      <h2>AWS Certified Solutions Architect - Associate</h2>
+      <p>Certificado por Amazon Web Services que demuestra las habilidades para diseñar, implementar y operar soluciones en la nube de AWS.</p>
+      <a href="CV/path/to/certificates/cert1.jpg" class="certificate-link">Ver certificado</a>
+    </div>
+    
+    <div class="certificate-card">
+      <img src="img/certificate-2.pdf" alt="Certificado de Google Cloud Certified - Associate Cloud Engineer">
+      <h2>Google Cloud Certified - Associate Cloud Engineer</h2>
+      <p>Certificado por Google Cloud que demuestra las habilidades para diseñar, implementar y administrar soluciones en la nube de Google Cloud.</p>
+      <a href="img/certificate-2.pdf" class="certificate-link">Ver certificado</a>
+    </div>
+  </div>
 </section>
 
-
-
-<section id="projects">
-    <h2>Proyectos</h2>
-    <div class="project">
-        <h3>Proyecto 1</h3>
-        <p>Descripción del proyecto 1.</p>
-        <button class="button-effect">Ver más</button>
-    </div>
-    <div class="project">
-        <h3>Proyecto 2</h3>
-        <p>Descripción del proyecto 2.</p>
-        <button class="button-effect">Ver más</button>
-    </div>
+<!-- Habilidades -->
+<section id="habilidades">
+  <h1 class="text-center mb-3">Habilidades</h1>
+  <ul class="list-unstyled">
+    <li>
+      <strong>Lenguajes de programación:</strong> Python, Java, JavaScript
+    </li>
+    <li>
+      <strong>Frameworks:</strong> Django, React, Angular
+    </li>
+    <li>
+      <strong>Bases de datos:</strong> MySQL, PostgreSQL, MongoDB
+    </li>
+    <li>
+      <strong>Sistemas operativos:</strong> Linux, Windows, macOS
+    </li>
+    <li>
+      <strong>Cloud computing:</strong> AWS, GCP, Azure
+    </li>
+  </ul>
 </section>
 
+<!-- Pie de página -->
+<footer class="mt-5 bg-light py-5">
+  <div class="container text-center">
+    <p>Copyright &copy; 2023 Víctor Hugo Rivero</p>
+  </div>
+</footer>
 
-
-                
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Soy un estudiante apasionado por la programación y la edición de video. Siempre busco aprender nuevas tecnologías y mejorar mis habilidades.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto 1.</p>
-        </div>
-        <div class="project">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto 2.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme en: correo@example.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Tu Nombre</p>
-    </footer>
-
-    <script src="/JS/script.js"></script>
+<!-- JavaScript -->
+<script src="js/app.js"></script>
 </body>
 </html>
